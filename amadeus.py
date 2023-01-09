@@ -5,17 +5,17 @@ import json, os, string, sys, threading, logging, time, re, random
 import openai
 
 #OpenAI API key
-aienv = os.getenv('OPENAI_KEY')
+aienv = os.getenv('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')
 if aienv == None:
-    openai.api_key = "Your OpenAI key"
+    openai.api_key = "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"
 else:
     openai.api_key = aienv
 print(aienv)
 
 #Telegram bot key
-tgenv = os.getenv('TELEGRAM_KEY')
+tgenv = os.getenv('5897535597:AAEZjpILxhmaf5u1UzVDw2seZr8mTCQaKcA')
 if tgenv == None:
-    tgkey = "Your Telegram Key"
+    tgkey = "5897535597:AAEZjpILxhmaf5u1UzVDw2seZr8mTCQaKcA"
 else:
     tgkey = tgenv
 print(tgenv)
@@ -35,8 +35,8 @@ running = False
 cache = None
 qcache = None
 chat_log = None
-botname = 'Makise Kurisu'
-username = 'Your name here'
+botname = 'Dayana'
+username = 'Danial'
 # Max chat log length (A token is about 4 letters and max tokens is 2048)
 max = int(3000)
 
